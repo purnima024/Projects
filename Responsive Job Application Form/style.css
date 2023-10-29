@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    background-color: #ccc;
+}
+.main_conatiner{
+max-width: 60rem;
+border: 2px solid black;
+margin: 0.9rem auto;
+font-size: 1.4rem;
+font-weight: 550;
+background-color: white;
+}
+.main_container2{
+    padding: 1.5rem;
+    margin: 1rem;
+}
+h1{
+    font-size: 3rem;
+   background-color: bisque;
+    width: 50%;
+    margin: auto;
+    margin-top: 2rem;
+   text-align: center;
+}
+.form-container{
+    font-size: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(20rem,1fr));
+    gap: 1rem;
+    
+}
+.form_container2{
+    display: flex;
+    flex-direction: column;
+   margin: 1.5rem;
+}
+
+.text_container2{
+grid-column: span 2;
+
+}
+.text_container2 textarea{
+    width: 100%;
+    border-radius: .3rem;
+    border: 0.10rem solid black;
+}
+input,select{
+    height: 4rem;
+    border-radius: .3rem;
+    border: 0.10rem solid black;
+}
+.button-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    
+}
+button{
+    font-weight: bolder;
+    height: 3.5rem;
+    width: 15rem;
+    background-color: bisque;
+    border-radius: 1.5rem;
+}
+button:hover{
+    background-color: #81b46a;
+   
+}
+@media (max-width: 550px) {
+    .text_container2{
+      grid-column: span 1;
+    }
+  } ;
